@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    
+<head>
+    <title>HW4</title>
+</head>
+    
+<body>
+    
+    <script>
+            
+           function getVolume(length, width, height)
+            { 
+                result = length * width * height;
+                return result;    
+            }
+               
+            function main()
+            {
+                for (var i = 1; i <= 10; i++)
+                    {   
+        
+                        var volume = getVolume(i + 2, i + 3, i + 4);
+                        
+                        switch (true)
+                                {
+                                    case (volume <= 500):
+                                        document.write("Small Volume: " + volume + "<br/>");
+                                        break;
+
+                                    case (volume <= 1000):
+                                        document.write("Medium Volume: " + volume + "<br/>");
+                                        break;
+
+                                    case (volume <= 1500):
+                                        document.write("Large Volume: " + volume + "<br/>");
+                                        break; 
+
+                                    case (volume >= 1501):
+                                        document.write("Extra Large Volume: " + volume + "<br/>");
+                                        break;
+
+                                    default:
+                                        document.write("Unknown");
+                                        break;
+                                }
+                    }
+            }
+   
+            main();
+    
+    </script>
+    
+</body>
+
+</html>
